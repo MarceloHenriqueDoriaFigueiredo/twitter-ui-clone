@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import './global.css'
 import twitterLogo from './assets/Logo.svg'
 import { Bell, BookmarkSimple, DotsThreeCircle, Envelope, FileText, Hash, House, Sparkle, User } from 'phosphor-react'
+import { Tweet } from './components/Tweet'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
@@ -44,6 +45,13 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 
           <div className="separator" />
         </main>
+
+        <Tweet />
+        <Tweet />
+        <Tweet />
+        <Tweet />
+        <Tweet />
+        <Tweet />
       </div>
     </div>
   </React.StrictMode>,
