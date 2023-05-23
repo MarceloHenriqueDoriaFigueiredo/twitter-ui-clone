@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './global.css'
 import twitterLogo from './assets/Logo.svg'
-import { Bell, BookmarkSimple, DotsThreeCircle, Envelope, FileText, Hash, House, User } from 'phosphor-react'
+import { Bell, BookmarkSimple, DotsThreeCircle, Envelope, FileText, Hash, House, Sparkle, User } from 'phosphor-react'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
@@ -27,7 +27,23 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       </aside>
 
       <div className="content">
-        content
+        <main className='timeline'>
+          <div className='timeline-header'>
+            Home
+            <Sparkle />
+          </div>
+
+          <form className='new-tweet-form'>
+            <label htmlFor="tweet">
+              <img src="https://github.com/MarceloHenriqueDoriaFigueiredo.png" alt="Marcelo Figueiredo" />
+              <textarea id="tweet" placeholder='Whats happening'></textarea>
+            </label>
+
+            <button type='submit'>Tweet</button>
+          </form>
+
+          <div className="separator" />
+        </main>
       </div>
     </div>
   </React.StrictMode>,
