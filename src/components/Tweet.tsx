@@ -1,4 +1,5 @@
 import { ArrowsClockwise, ChatCircle, Heart } from 'phosphor-react'
+import { NavLink } from 'react-router-dom'
 import './Tweet.css'
 
 interface TweetProps {
@@ -7,7 +8,7 @@ interface TweetProps {
 
 export function Tweet(props: TweetProps) {
     return(
-        <a href='#' className="tweet">
+        <NavLink to='/status' className="tweet">
             <img src="https://github.com/MarceloHenriqueDoriaFigueiredo.png" alt="Marcelo Figueiredo" />
 
             <div className="tweet-content">
@@ -34,6 +35,6 @@ export function Tweet(props: TweetProps) {
                     </div>
                 </div>
             </div>
-        </a>
+        </NavLink>
     )
 }
